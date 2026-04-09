@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <script src='main.js' type='module'></script>
+
+    <link href='../shared.css' rel='stylesheet'>
+    <link rel='shortcut icon' href='data:image/x-icon;,' type='image/x-icon'> 
+  </head>
+  <body>
+    <canvas></canvas>
+    <div>
+      <div>
+        <label for="feedRate">Feed rate:</label>
+        <input type="range" id="feedSlider" min="0.001" max="1" step="any" value=".0545">
+      </div>
+
+      <div>
+        <label for="killRate">Kill rate:</label>
+        <input type="range" id="killSlider" min="0.001" max="1" step="any" value="0.062">
+      </div>
+
+      <div>
+        <label for="ARate">Diffusion A:</label>
+        <input type="range" id="ASlider" min="0.001" max="1" step="any" value="1.0">
+      </div>
+
+      <div>
+        <label for="BRate">Diffusion B:</label>
+        <input type="range" id="BSlider" min="0.001" max="1" step="any" value="0.5">
+      </div>
+    </div>
+  </body>
+</html>
