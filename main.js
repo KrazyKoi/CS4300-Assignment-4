@@ -58,7 +58,8 @@ const computePass = sg.compute({
     D_u,
     sg.pingpong( statebuffer1, statebuffer2 ) ],
   dispatchCount:  [Math.round(seagulls.width / 8), Math.round(seagulls.height/8), 1],
-  onframe() { mouse.value = Mouse.values }
+  onframe() { mouse.value = Mouse.values },
+  times: 4
 })
 
 feedSlider.oninput = () => feed_u.value = feedSlider.value
