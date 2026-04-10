@@ -1,4 +1,4 @@
-import { default as seagulls } from '../../gulls.js'
+import { default as seagulls } from './gulls.js'
 import { default as Mouse } from './mouse.js'
 
 const sg      = await seagulls.init(),
